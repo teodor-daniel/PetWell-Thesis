@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>New Medical Record Uploaded</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #f9f9f9; 
+            margin: 0;
+            padding: 20px;
+        }
+        .container { 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+            max-width: 600px; 
+            margin: 0 auto; 
+        }
+        .header { 
+            color: #7bc71e; 
+            font-size: 1.8em; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #7bc71e;
+            padding-bottom: 10px;
+        }
+        .details {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #7bc71e;
+        }
+        .footer { 
+            color: #888; 
+            font-size: 0.9em; 
+            margin-top: 30px; 
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        .label {
+            font-weight: 600;
+            color: #333;
+        }
+        .value {
+            color: #666;
+            margin-left: 10px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #7bc71e;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 20px 0;
+            font-weight: 600;
+        }
+        .cta-button:hover {
+            background: #6ba618;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">🐾 New Medical Record Available</div>
+    
+    <p>Dear <span class="label" th:text="${userName}">Pet Owner</span>,</p>
+    
+    <p>A new medical record has been uploaded for your pet <strong th:text="${petName}">Pet Name</strong>.</p>
+    
+    <div class="details">
+        <p><span class="label">Pet:</span><span class="value" th:text="${petName}">Pet Name</span></p>
+        <p><span class="label">File:</span><span class="value" th:text="${fileName}">medical_record.pdf</span></p>
+        <p><span class="label">Uploaded by:</span><span class="value" th:text="${uploaderName}">Dr. Smith</span></p>
+        <p><span class="label">Clinic:</span><span class="value" th:text="${clinicName}">Vet Clinic</span></p>
+        <p><span class="label">Date:</span><span class="value" th:text="${uploadDate}">2024-01-01</span></p>
+    </div>
+    
+    <p>You can now access this medical record in your PetWell account. The record has been automatically shared with you and is available for download.</p>
+    
+    <p style="text-align: center;">
+        <a href="https://petwell-app.com/medical-records" class="cta-button">View Medical Records</a>
+    </p>
+    
+    <p><strong>Note:</strong> This medical record is now part of your pet's permanent health history and can be accessed by authorized veterinary staff when needed.</p>
+    
+    <div class="footer">
+        <p><strong>PetWell Medical Records</strong></p>
+        <p>This notification was sent automatically when a new medical record was uploaded for your pet.</p>
+        <p>© 2024 PetWell - Student Research Project</p>
+    </div>
+</div>
+</body>
+</html> 

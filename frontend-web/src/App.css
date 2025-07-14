@@ -1,0 +1,21 @@
+/* src/App.css */
+
+.App {
+  text-align: center;
+  font-family: Arial, sans‑serif;
+  background-color:white;
+}
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
