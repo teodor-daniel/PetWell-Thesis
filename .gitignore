@@ -1,0 +1,81 @@
+# Maven / Gradle
+/target/
+/build/
+
+# Logs
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IntelliJ IDEA
+.idea/
+/*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Application properties
+src/main/resources/application.properties
+src/main/resources/application.yml
+src/main/resources/application-*.properties
+src/main/resources/application-*.yml
+
+# Environment/Secrets
+.env
+*.env
+
+# Backup/Temp
+*.swp
+*.bak
+*.tmp
+
+# Coverage
+jacoco.exec
+coverage-reports/
+
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Production build
+/build/
+
+# Coverage
+coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs/Editors
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.*.local
+.env.local
+
+# Testing
+jest-test-results.json
+
+# Cache
+.cache/
+.next/
+out/
+*.tsbuildinfo
