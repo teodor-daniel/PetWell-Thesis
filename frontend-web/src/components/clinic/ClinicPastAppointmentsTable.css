@@ -1,0 +1,7 @@
+.zindex-datepicker {
+  z-index: 10000 !important;
+}
+
+.zindex-datepicker .react-datepicker__portal {
+  z-index: 10000 !important;
+} 
