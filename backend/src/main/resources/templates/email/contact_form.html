@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>New Contact Form Message</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #f9f9f9; 
+            margin: 0;
+            padding: 20px;
+        }
+        .container { 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+            max-width: 600px; 
+            margin: 0 auto; 
+        }
+        .header { 
+            color: #7bc71e; 
+            font-size: 1.8em; 
+            margin-bottom: 20px; 
+            border-bottom: 2px solid #7bc71e;
+            padding-bottom: 10px;
+        }
+        .contact-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #7bc71e;
+        }
+        .message-box {
+            background: #f5f5f5; 
+            padding: 20px; 
+            border-radius: 8px; 
+            margin: 20px 0;
+            border: 1px solid #e9ecef;
+            white-space: pre-wrap;
+            font-family: inherit;
+        }
+        .footer { 
+            color: #888; 
+            font-size: 0.9em; 
+            margin-top: 30px; 
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        .label {
+            font-weight: 600;
+            color: #333;
+        }
+        .value {
+            color: #666;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">🐾 New Contact Form Message</div>
+    
+    <div class="contact-info">
+        <p><span class="label">From:</span><span class="value" th:text="${name}">Contact Name</span></p>
+        <p><span class="label">Email:</span><span class="value" th:text="${email}">contact@example.com</span></p>
+    </div>
+    
+    <h3 style="color: #333; margin: 25px 0 15px 0;">Message:</h3>
+    <div class="message-box" th:text="${message}">
+        Contact message content will appear here...
+    </div>
+    
+    <div class="footer">
+        <p><strong>PetWell Contact Form</strong></p>
+        <p>This message was sent from the PetWell application contact form.</p>
+        <p>© 2024 PetWell - Student Research Project</p>
+    </div>
+</div>
+</body>
+</html> 
